@@ -1,0 +1,25 @@
+{
+  "name": "shopify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha src/saucedemo.js",
+    "generate": "mocha -r dotenv/config --no-timeouts --reporter allure-mocha",
+    "start": "allure open allure-report --port 8080",
+    "report": "allure generate allure-results --clean"
+  },
+  "author": "Eza Nanda",
+  "license": "ISC",
+  "dependencies": {
+    "allure-commandline": "^2.30.0",
+    "chai": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "selenium-webdriver": "^4.25.0"
+  },
+  "mocha": "^10.2.9",
+  "devDependencies": {
+    "allure-mocha": "^3.0.5",
+    "mocha": "^10.7.3"
+  }
+}
